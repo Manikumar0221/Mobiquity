@@ -1,0 +1,35 @@
+#home-title-div {
+    text-align: center;
+    padding: 15px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    app-city-details-card {
+        display: contents;
+    }
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#home-table-section{
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: skyblue;
+        color: black;
+    }
+}

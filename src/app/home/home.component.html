@@ -1,0 +1,31 @@
+<div id="home-title-div">
+    <strong>Top 5 European Cities</strong>
+</div>
+<table id="home-table-section">
+    <thead>
+    <tr>
+        <th>City name</th>
+        <th>Temperature (&#8451;)</th>
+        <th>Sunrise time</th>
+        <th>Sunset time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <app-city-details-card [cardDetails]="istanbulData$ | async"></app-city-details-card>
+    </tr>
+    <tr>
+        <app-city-details-card [cardDetails]="moscowData$ | async"></app-city-details-card>
+    </tr>
+    <tr>
+        <app-city-details-card [cardDetails]="londonData$ | async"></app-city-details-card>
+    </tr>
+    <tr>
+        <app-city-details-card [cardDetails]="berlinData$ | async"></app-city-details-card>
+    </tr>
+    <tr>
+        <app-city-details-card [cardDetails]="parisData$ | async"></app-city-details-card>
+    </tr>
+    </tbody>
+  </table>
+  

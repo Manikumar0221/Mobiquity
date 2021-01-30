@@ -1,0 +1,24 @@
+<div id="details-title-div">
+    <strong>{{ciytName}} city 5 days forecast</strong>
+</div>
+<table id="details-table-section">
+    <tr>
+        <th>Days</th>
+        <th>Temperature (&#8451;)</th>
+        <th>Sea Level (msw)</th>
+    </tr>
+    <tr *ngFor='let day of (forecastData$ | async)?.list; let i = index'>
+        <td>
+            Day {{i + 1}}
+        </td>
+        <td>
+            {{ getTemperature(day.temp.day) }}
+        </td>
+        <td>
+            {{ getSeaLevel(day.pressure) }}
+        </td>
+    </tr>
+</table>
+<div class="details-button-section">
+    <button mat-stroked-button (click)="onBackToHome()">Back to home</button>
+</div>
